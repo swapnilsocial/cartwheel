@@ -11,7 +11,7 @@ def clear():
         _ = system('clear')
 
 
-# The walking man code will stay here
+# The walking man matrix will stay here
 M1 = [['9', '9', 'o', '9', '9', '9'],
       ['9', '/', '|', "\\", '9', '9'],
       ['9', '/', '9', "\\", '9', '9']]
@@ -64,9 +64,12 @@ M10 = [
     ['9', '9', '9', '9', '9', '9', '9', '9', '9', '9', '9', '9', '9', '9', '9', '9', '9', '9', '9', '9', '9', '9', '9',
      '/', '9', "\\", '9']]
 
+#Mapping the matrix with string variables
 Relate = {'M1': M1, 'M2': M2, 'M3': M3, 'M4': M4, 'M5': M5, 'M6': M6, 'M7': M7, 'M8': M8, 'M9': M9, 'M10': M10}
 
+#the code calls matrix to perform a cart wheel
 def cartwheel():
+    #back cartwheel
     for i in range(10, 1, -1):
         # print(Relate["M{}".format(i)])
         for item in Relate["M{}".format(i)]:
@@ -78,7 +81,7 @@ def cartwheel():
             print("")
         sleep(0.2)
         clear()
-
+#front cartwheel
     for i in range(1, 11):
         # print(Relate["M{}".format(i)])
         for item in Relate["M{}".format(i)]:
@@ -90,6 +93,8 @@ def cartwheel():
             print("")
         sleep(0.2)
         clear()
+        
+#set tthe number of front and back cartwheels and do the cart wheel.
 
 for _ in range(3):
     cartwheel()
