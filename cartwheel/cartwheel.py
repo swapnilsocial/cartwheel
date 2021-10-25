@@ -4,7 +4,7 @@ from time import sleep
 print(__name__)
 
 
-# define our clear function
+# define our clear function to clear screen in windows and linux
 def clear():
     if name == 'nt':
         _ = system('cls')
